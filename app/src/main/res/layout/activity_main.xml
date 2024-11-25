@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/process_view"
+        android:layout_width="match_parent"
+        style="@style/CalculatorProgramResultView"
+        android:text="10 * 10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/result_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/result_view"
+        android:layout_width="match_parent"
+        style="@style/CalculatorProgramResultView"
+        android:text="1,000"
+        app:layout_constraintTop_toBottomOf="@id/process_view" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_view" >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clean_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:background="#333333"
+            android:text="C" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/percent_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:background="#333333"
+            android:text="%" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/divide_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:background="#333333"
+            android:text="÷" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backspace_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textColor="#FFFFFFFF"
+            android:background="#333333"
+            android:text="←" />
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
