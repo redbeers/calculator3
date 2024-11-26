@@ -4,5 +4,5 @@
     <item android:drawable="@color/colorClicked" android:state_pressed="true"/>
 
     <!-- 버튼 기본 상태 (어두운 색상) -->
-    <item android:drawable="@color/colorNormal"/>
+    <item android:drawable="@color/colorNormal1"/>
 </selector>
